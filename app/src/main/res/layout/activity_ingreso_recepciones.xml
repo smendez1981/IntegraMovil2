@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_ingreso_recepciones"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/outlinedTextField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/proveedor"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtNombreProveedorRecepcion"
+                    android:text="LUNCHEON TICKETS S.A. (ACCOR) "
+                    android:enabled="false"
+                    android:textColor="@color/primary_dark"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/carpeta"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtNombreCarpetaIngresoRecepciones"
+                    android:enabled="false"
+                    android:textColor="@color/primary_dark"
+
+                    android:text="1 - Carpeta 1"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/leer_c_digo_de_barras"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtCodigoBarrasIngresoRecepciones"
+                    android:text=""
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/art_culo"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtArticuloIngresoRecepciones"
+                    android:text=""
+                    android:textColor="@color/primary_dark"
+
+                    android:enabled="false"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dimensiones (en cm)"
+            android:paddingTop="10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+
+            ></TextView>
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                             <com.google.android.material.textfield.TextInputLayout
+                    android:layout_gravity="bottom"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/largo"
+                    android:paddingRight="5dp"
+                    android:layout_weight="0.25"
+                    android:layout_width="0dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtLargoIngresoRecepciones"
+                        android:enabled="false"
+                        android:text="0.00"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/primary_dark"
+
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_gravity="bottom"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/ancho"
+                    android:layout_weight="0.25"
+                    android:paddingRight="5dp"
+                    android:layout_width="0dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtAnchoIngresoRecepciones"
+                        android:enabled="false"
+                        android:text="0.00"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/primary_dark"
+
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                              <com.google.android.material.textfield.TextInputLayout
+                    android:layout_gravity="bottom"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/altura"
+                    android:layout_weight="0.25"
+                                  android:paddingRight="5dp"
+                    android:layout_width="0dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtAlturaIngresoRecepciones"
+                        android:enabled="false"
+                        android:text="0.00"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/primary_dark"
+
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_gravity="bottom"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/unidades"
+                    android:layout_weight="0.25"
+                    android:layout_width="0dp"
+                    android:paddingRight="5dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtCantidadIngresoRecepciones"
+                        android:enabled="false"
+                        android:text="0.00"
+                        android:textColor="@color/primary_dark"
+                        android:textAlignment="textEnd"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_gravity="bottom"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/cantidad_acumulada"
+                    android:paddingRight="5dp"
+                    android:layout_weight="0.25"
+                    android:layout_width="0dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtCantidadAcumuladaIngresoRecepciones"
+                        android:enabled="false"
+                        android:text="0.00"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/primary_dark"
+
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_gravity="bottom"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/ingresar_cantidad"
+                    android:layout_weight="0.25"
+                    android:paddingRight="5dp"
+                    android:layout_width="0dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtIngresarCantidadIngresoRecepciones"
+
+                        android:text="0.00"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/primary_dark"
+
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/leer_lpn_destino"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtLpnIngresoRecepciones"
+                    android:text=""
+                    android:textColor="@color/primary_dark"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnGuardarRecepcion"
+        app:layout_anchorGravity="bottom|right|end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_accept_save"
+        app:backgroundTint="@color/primary"
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignParentRight="true"
+android:padding="20dp"
+        app:fabCustomSize="64dp"
+        app:maxImageSize="50dp"
+        app:tint="@android:color/white" />
+
+
+
+
+</RelativeLayout>
